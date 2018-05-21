@@ -1,0 +1,13 @@
+.Home {
+  position: relative;
+  padding: 180px 20%;
+  &__header {
+    color: #1874cd;
+    font-size: 48px;
+    font-family: 'Raleway', sans-serif;
+  }
+  &__p {
+    padding-top: 20px;
+    font-family: "Tajawal", sans-serif;
+  }
+}

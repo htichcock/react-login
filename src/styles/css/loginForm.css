@@ -1,0 +1,44 @@
+.LoginForm {
+  display: flex;
+  z-index: 2;
+  position: relative;
+  flex-flow: column nowrap;
+  width: 180px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  height: 0px;
+  top: -172px; }
+  .LoginForm--active {
+    top: 105px;
+    height: 172px; }
+  .LoginForm--desktop {
+    position: relative;
+    height: 83px;
+    top: 0px;
+    width: 0px;
+    left: 425px;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: space-between; }
+  .LoginForm--desktop.LoginForm--active {
+    left: 0px;
+    width: 400px; }
+  .LoginForm__submit {
+    outline: none;
+    background-color: aliceblue;
+    border: 1px #1874cd solid;
+    border-radius: 5px;
+    height: 26px;
+    margin: 0 5px;
+    align-self: flex-end;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding-left: 4px;
+    padding-bottom: 2px; }
+    .LoginForm__submit:active {
+      background: #1874cd;
+      color: white; }
+  .LoginForm--desktop .LoginForm__submit {
+    align-self: flex-start;
+    margin: 20px 5px; }

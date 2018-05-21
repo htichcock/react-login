@@ -1,0 +1,64 @@
+.HeaderBar {
+  width: 100vw;
+  position: fixed;
+  z-index: 2;
+  border-bottom: 2px solid aliceblue;
+  background: #1874cd;
+  display: flex;
+  align-items: center;
+  height: 85px;
+  justify-content: flex-start; }
+  .HeaderBar__titleP {
+    font-family: "Tajawal", sans-serif;
+    padding-left: 20px;
+    color: white;
+    font-size: 48px;
+    position: relative;
+    display: inline-block; }
+  .HeaderBar__titleS {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .HeaderBar__loginWrapper {
+    display: flex;
+    justify-content: center; }
+  .HeaderBar__loginBtnWrapper, .HeaderBar__helloWrapper {
+    position: absolute;
+    right: 0;
+    display: flex;
+    transition: 0.5s; }
+  .HeaderBar__navBtnWrapper {
+    display: flex; }
+  .HeaderBar__loginBtn, .HeaderBar__navBtn {
+    transition: 0.5s;
+    height: 83px;
+    width: 60px;
+    background: white;
+    border: none;
+    border-left: aliceblue 2px solid;
+    font-family: "Raleway", "sans-serif";
+    font-size: 16px;
+    padding-bottom: 18px;
+    cursor: pointer; }
+  .HeaderBar__hello {
+    padding-top: 18px;
+    text-align: center;
+    font-family: "Raleway", "sans-serif";
+    font-size: 16px;
+    background: white;
+    border: none;
+    border-left: aliceblue 2px solid;
+    transition: 0.5s;
+    height: 83px;
+    width: 60px; }
+  .HeaderBar--desktop {
+    background: linear-gradient(to right, #1874cd, #1874cd 60%, white 80%);
+    transition: 0.5s; }
+  .HeaderBar--desktop.HeaderBar--loginActive {
+    background-position: -400px;
+    transition: 0.5s; }
+  .HeaderBar--desktop.HeaderBar--navActive {
+    background-position: 300px;
+    transition: 0.5s; }
